@@ -74,6 +74,9 @@ void List::delete_item() {
         for(unsigned int i = 0; i < list.size(); i++) {
             std::cout << i << ": " << list[i] << std::endl;
         }
+        int choiceNum;
+        std::cin >> choiceNum;
+        list.erase(list.begin()+choiceNum);
     } else {
         std::cout << "No items in the list to delete.\n\n\n";
     }
